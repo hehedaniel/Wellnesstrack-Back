@@ -32,7 +32,7 @@ class PesoController extends AbstractController
       $pesos = $pesoRepository->findBy(["idUsuario" => $usuario->getId()]);
 
       if (!$pesos) {
-         return RespuestaController::format("404", "Este usuario no tiene pesos registrados");
+         return RespuestaController::format("200", "Este usuario no tiene pesos registrados");
       }
 
       $pesosJSON = [];
@@ -58,7 +58,7 @@ class PesoController extends AbstractController
       $peso = $pesoRepository->find($id);
 
       if (!$peso) {
-         return RespuestaController::format("404", "No se encontró el peso");
+         return RespuestaController::format("200", "No se encontró el peso");
       }
 
       return RespuestaController::format("200", $this->pesoJSON($peso));
