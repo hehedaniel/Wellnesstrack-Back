@@ -1,0 +1,16 @@
+nelmio_cors:
+    defaults:
+        origin_regex: true
+        allow_origin: ['http://localhost:4200']  # Esto permite solicitudes desde http://localhost:4200
+        allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
+        allow_headers: ['Content-Type', 'Authorization']
+        expose_headers: ['Link']
+        max_age: 3600
+    paths:
+        '^/':  # Aplica estas reglas a todas las rutas
+            origin_regex: true
+            allow_origin: ['^http://localhost:[0-9]+']  # Permite solicitudes desde cualquier puerto en localhost
+            allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
+            allow_headers: ['Content-Type', 'Authorization']  # Cambiado a 'Content-Type' y 'Authorization'
+            max_age: 3600
+            hosts: ['^localhost']  # Aplica a hosts que contienen "localhost"

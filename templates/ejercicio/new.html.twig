@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Ejercicio{% endblock %}
+
+{% block body %}
+    <h1>Create new Ejercicio</h1>
+
+    {{ include('ejercicio/_form.html.twig') }}
+
+    <a href="{{ path('app_ejercicio_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,451 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "PFG",
+    "collectionId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+    "dateExported": "2024-06-01T18:37:49.539Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "8ba39f07-455e-407c-bbb8-e3e643ba0084",
+            "name": "Alimento",
+            "containerId": "",
+            "created": "2024-06-01T15:51:00.314Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d3a8735c-78fc-4bb6-9ba2-5f757b69520d",
+            "name": "ConsumoDia",
+            "containerId": "",
+            "created": "2024-06-01T16:19:10.391Z",
+            "sortNum": 20000,
+            "settings": {
+                "preReq": {
+                    "options": {
+                        "clearCookies": true
+                    }
+                }
+            }
+        },
+        {
+            "_id": "e1b6bddf-28a7-4368-9642-70c8ddf72f00",
+            "name": "Ejercicio",
+            "containerId": "",
+            "created": "2024-06-01T17:24:22.745Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "1cb5630e-9afe-46cc-9b11-07d23bea1aca",
+            "name": "Enlace",
+            "containerId": "",
+            "created": "2024-06-01T17:40:22.856Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "e6b45fe0-721e-4534-8cd4-a7c39f6b00fc",
+            "name": "Peso",
+            "containerId": "",
+            "created": "2024-06-01T17:50:18.924Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9b1e03c5-c07e-4b6e-88f4-47658afe3470",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "1cb5630e-9afe-46cc-9b11-07d23bea1aca",
+            "name": "Obtener enlaces",
+            "url": "http://localhost:8000/enlace",
+            "method": "GET",
+            "sortNum": 12500,
+            "created": "2024-06-01T17:40:44.026Z",
+            "modified": "2024-06-01T17:41:08.433Z",
+            "headers": []
+        },
+        {
+            "_id": "7ff13f27-bd6b-4380-97e1-f424a1c0d6b1",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "1cb5630e-9afe-46cc-9b11-07d23bea1aca",
+            "name": "Obtener un enlace",
+            "url": "http://localhost:8000/enlace/{id}",
+            "method": "GET",
+            "sortNum": 18750,
+            "created": "2024-06-01T17:41:41.579Z",
+            "modified": "2024-06-01T17:42:31.884Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "7774befc-7e3f-4093-bfe3-c0c1768db66e",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "8ba39f07-455e-407c-bbb8-e3e643ba0084",
+            "name": "Obtener alimentos",
+            "url": "http://localhost:8000/alimento",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-01T15:51:00.314Z",
+            "modified": "2024-06-01T15:51:00.314Z",
+            "headers": []
+        },
+        {
+            "_id": "3f85b5e7-f6dc-4b2a-979b-95d19db6f5ad",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "1cb5630e-9afe-46cc-9b11-07d23bea1aca",
+            "name": "Crear un enlace",
+            "url": "http://localhost:8000/enlace/crear",
+            "method": "POST",
+            "sortNum": 21875,
+            "created": "2024-06-01T17:41:45.523Z",
+            "modified": "2024-06-01T17:44:15.581Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"enlace\": \"test enlace\",\r\n  \"idEjercicio\": \"2\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b63be1ab-2814-4499-912a-0d83b9d8e49e",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "1cb5630e-9afe-46cc-9b11-07d23bea1aca",
+            "name": "Editar un enlace",
+            "url": "http://localhost:8000/enlace/editar/{id}",
+            "method": "PUT",
+            "sortNum": 25000,
+            "created": "2024-06-01T17:41:52.884Z",
+            "modified": "2024-06-01T17:47:52.993Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "6",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"enlace\": \"test enlace NUECO\",\r\n  \"idEjercicio\": \"3\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e3ba881f-15ec-4fa8-8db5-a8de37ac1464",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "8ba39f07-455e-407c-bbb8-e3e643ba0084",
+            "name": "Obtener un alimento",
+            "url": "http://localhost:8000/alimento/{id}",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-06-01T15:51:00.315Z",
+            "modified": "2024-06-01T15:51:00.315Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "5",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "92bf2319-7d8b-4516-9bbd-a5a68b39c7f6",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "1cb5630e-9afe-46cc-9b11-07d23bea1aca",
+            "name": "Eliminar un enlace",
+            "url": "http://localhost:8000/enlace/eliminar",
+            "method": "DELETE",
+            "sortNum": 37500,
+            "created": "2024-06-01T17:41:56.863Z",
+            "modified": "2024-06-01T17:48:51.440Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 6\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "19cba5ce-2c48-4cbb-bb36-0bb122c1ae10",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "8ba39f07-455e-407c-bbb8-e3e643ba0084",
+            "name": "Crear un alimento",
+            "url": "http://localhost:8000/alimento/crear",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-06-01T15:51:52.242Z",
+            "modified": "2024-06-01T16:01:53.388Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"nombre\": \"Manzana roja\",\r\n    \"descripcion\": \"Una manzana roja y jugosa\",\r\n    \"marca\": \"Marca de frutas\",\r\n    \"cantidad\": 1,\r\n    \"proteinas\": 0.3,\r\n    \"grasas\": 0.4,\r\n    \"carbohidratos\": 11.4,\r\n    \"azucares\": 10.4,\r\n    \"vitaminas\": 5.6,\r\n    \"minerales\": 4.5,\r\n    \"imagen\": \"url_de_la_imagen\",\r\n    \"idUsuario\": \"2\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "eae3197a-6571-40e4-b173-da0b77db5884",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "8ba39f07-455e-407c-bbb8-e3e643ba0084",
+            "name": "Editar un alimento",
+            "url": "http://localhost:8000/alimento/editar/{id}",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-06-01T15:52:29.120Z",
+            "modified": "2024-06-01T16:15:37.821Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "7",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"nombre\": \"Manzana Verde\",\r\n    \"descripcion\": \"Una manzana verde y crujiente\",\r\n    \"marca\": \"Marca de frutas\",\r\n    \"cantidad\": 2,\r\n    \"proteinas\": 0.5,\r\n    \"grasas\": 0.2,\r\n    \"carbohidratos\": 12.0,\r\n    \"azucares\": 11.0,\r\n    \"vitaminas\": 8.5,\r\n    \"minerales\": 8.5,\r\n    \"imagen\": \"nueva_url_de_la_imagen\",\r\n    \"idUsuario\": \"2\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b7c9ca54-55e5-4831-a021-21e1ad248b50",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "8ba39f07-455e-407c-bbb8-e3e643ba0084",
+            "name": "Eliminar un alimento",
+            "url": "http://localhost:8000/alimento/eliminar",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-06-01T15:52:54.782Z",
+            "modified": "2024-06-01T16:18:15.713Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 7\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "aa5e6a24-94fe-47a9-bcab-c60aa90ad156",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "d3a8735c-78fc-4bb6-9ba2-5f757b69520d",
+            "name": "Obtener por Usuario",
+            "url": "http://localhost:8000/consumodia/usuario/{id}",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-06-01T16:19:51.648Z",
+            "modified": "2024-06-01T16:22:54.222Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": true
+                }
+            ]
+        },
+        {
+            "_id": "d6991a72-6d7d-49f1-8c50-441c35419c3c",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "d3a8735c-78fc-4bb6-9ba2-5f757b69520d",
+            "name": "Obtener de un usuario entre un rango de fechas",
+            "url": "http://localhost:8000/consumodia/usuario/rango/{id}",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-06-01T16:59:34.589Z",
+            "modified": "2024-06-01T17:02:39.134Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fechaInicio\":\"2024-06-01\",\n  \"fechaFin\":\"2024-06-03\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "dfe45891-e4a7-4dd1-9c14-dd41cd3576d2",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "d3a8735c-78fc-4bb6-9ba2-5f757b69520d",
+            "name": "Crear nuevo Consumo Dia",
+            "url": "http://localhost:8000/consumodia/crear/usuario/{id}",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-06-01T17:07:20.235Z",
+            "modified": "2024-06-01T17:09:45.169Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"comida\": \"pizza\",\r\n  \"cantidad\": 2,\r\n  \"momento\": \"almuerzo\",\r\n  \"fecha\": \"2024-06-02\",\r\n  \"hora\": \"12:00:00\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "64b24a54-bcd2-440d-bcbd-01f4e7fea66c",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "d3a8735c-78fc-4bb6-9ba2-5f757b69520d",
+            "name": "Editar Consumo Dia Copy",
+            "url": "http://localhost:8000/consumodia/editar",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-06-01T17:14:35.961Z",
+            "modified": "2024-06-01T17:19:41.824Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"comida\": \"Pisa\",\r\n  \"cantidad\": 1,\r\n  \"momento\": \"Cena\",\r\n  \"fecha\": \"2024-06-02\",\r\n  \"hora\": \"12:00:00\",\r\n  \"idUsuario\": \"2\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "848e1823-c1d7-425d-b33a-617a1e8518c5",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "d3a8735c-78fc-4bb6-9ba2-5f757b69520d",
+            "name": "Editar Consumo Dia Copy Copy",
+            "url": "http://localhost:8000/consumodia/eliminar",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-06-01T17:20:05.240Z",
+            "modified": "2024-06-01T17:22:14.071Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"comida\": \"Pisa\",\n  \"cantidad\": 1,\n  \"momento\": \"Cena\",\n  \"fecha\": \"2024-06-02\",\n  \"hora\": \"12:00:00\",\n  \"idUsuario\": \"2\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "947b1cce-4008-4cf9-9047-8a8e06cc7f9f",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "e1b6bddf-28a7-4368-9642-70c8ddf72f00",
+            "name": "Obtener Ejercicios",
+            "url": "http://localhost:8000/ejercicio/",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-06-01T17:24:34.414Z",
+            "modified": "2024-06-01T17:25:06.506Z",
+            "headers": []
+        },
+        {
+            "_id": "8417ad93-5c0d-4d22-9934-188e09e84c20",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "e1b6bddf-28a7-4368-9642-70c8ddf72f00",
+            "name": "Obtener un Ejercicio",
+            "url": "http://localhost:8000/ejercicio/3",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-06-01T17:27:16.642Z",
+            "modified": "2024-06-01T17:27:39.283Z",
+            "headers": []
+        },
+        {
+            "_id": "91a7bf7f-10b5-49e0-ab1c-1d6539335f43",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "e1b6bddf-28a7-4368-9642-70c8ddf72f00",
+            "name": "Crear nuevo ejercicio",
+            "url": "http://localhost:8000/ejercicio/crear",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-06-01T17:30:56.552Z",
+            "modified": "2024-06-01T17:33:01.552Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"nombre\": \"Correr mu rapido\",\r\n  \"descripcion\": \"Correr mu rapido pero mu rapido\",\r\n  \"dificultad\": \"Dificil\",\r\n  \"grupoMuscular\": \"Piernas\",\r\n  \"instrucciones\": \"Correr mu rapido, lo mas rapido que puedas\",\r\n  \"valorMET\": \"12.0\",\r\n  \"idUsuario\": \"2\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bac6d898-3bb4-4397-8faf-2e15ea1501bd",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "e1b6bddf-28a7-4368-9642-70c8ddf72f00",
+            "name": "Editar un ejercicio",
+            "url": "http://localhost:8000/ejercicio/editar/{id}",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2024-06-01T17:34:21.127Z",
+            "modified": "2024-06-01T17:35:24.895Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "5",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"nombre\": \"Correr mu rapido pero no tanto\",\r\n  \"descripcion\": \"Correr mu rapido pero mu rapido\",\r\n  \"dificultad\": \"Medio\",\r\n  \"grupoMuscular\": \"Piernas\",\r\n  \"instrucciones\": \"Correr mu rapido, lo mas rapido que puedas\",\r\n  \"valorMET\": \"8.0\",\r\n  \"idUsuario\": \"2\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d2f627f8-2d0c-46fd-97f7-e35547aa8d9c",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "e1b6bddf-28a7-4368-9642-70c8ddf72f00",
+            "name": "Eliminar un ejercicio",
+            "url": "http://localhost:8000/ejercicio/eliminar",
+            "method": "DELETE",
+            "sortNum": 180000,
+            "created": "2024-06-01T17:37:37.114Z",
+            "modified": "2024-06-01T17:38:49.645Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"nombre\": \"Correr mu rapido pero no tanto\",\r\n  \"descripcion\": \"Correr mu rapido pero mu rapido\",\r\n  \"dificultad\": \"Medio\",\r\n  \"grupoMuscular\": \"Piernas\",\r\n  \"instrucciones\": \"Correr mu rapido, lo mas rapido que puedas\",\r\n  \"valorMET\": \"8.0\",\r\n  \"idUsuario\": \"2\",\r\n  \"id\": \"5\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ca352f4f-2d19-433d-a215-75a04ee557b4",
+            "colId": "11601775-90c8-4518-9b2e-de3c941d8f05",
+            "containerId": "e6b45fe0-721e-4534-8cd4-a7c39f6b00fc",
+            "name": "Obtener peso",
+            "url": "http://localhost:8000/peso/{id}",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2024-06-01T17:50:26.610Z",
+            "modified": "2024-06-01T18:13:34.095Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": true
+                }
+            ]
+        }
+    ],
+    "ref": "hoVRWmuGuhoZ_TkqdF8IkxtfSDRIE5Q-MdpsHe7e3kWJByraNSdJJaFPh42UgW8kBc7q27nmeOAULdX7mnPviw"
+}
+
+{
+    {
+        "azucares": 2
+      "calorias": 2
+      "cantidad" : 5
+      "carbohidratos": 2
+      "descripcion": "mi desodorante"
+      "grasas": 2
+      "imagen": "imagen en base 64"
+      "marca": "axe"
+      "nombre": "desodorante"
+      "proteinas": 3
+      "usuario_id": "2"
+      "vitaminas": 2
+    }
+}
